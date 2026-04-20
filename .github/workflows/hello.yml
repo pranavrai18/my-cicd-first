@@ -1,0 +1,19 @@
+name: My First Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout my code
+      uses: actions/checkout@v4
+
+    - name: Say Hello World
+      run: echo "Hello Github Actions!"
+
+    - name: Show Date and Time
+      run: date
