@@ -32,15 +32,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4   
 
-name: Build
-
-on:
-  push:
-    branches:
-      - main
-
-
-jobs:
   build:
     name: Build and analyze
     runs-on: windows-latest
